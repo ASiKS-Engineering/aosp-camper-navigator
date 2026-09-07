@@ -2,9 +2,8 @@ android_app_import {
     name: "CamperNavigator",
     apk: "CamperNavigator.apk",
     presigned: true, // Nutzt die Signatur aus Android Studio
+    preprocessed: true,
     dex_preopt: {
         enabled: false,
     },
-    privileged: true, // Falls die App System-Rechte benötigt (in /system/priv-app)
-    product_specific: true, // Installiert in /product/app
 }
