@@ -3,7 +3,15 @@ android_app_import {
     apk: "CamperNavigator.apk",
     presigned: true, // Nutzt die Signatur aus Android Studio
     preprocessed: true,
+    privileged: true,
     dex_preopt: {
         enabled: false,
     },
+}
+
+prebuilt_etc {
+    name: "default-permissions-com.example.campernavigator.xml",
+    src: "default-permissions-com.example.campernavigator.xml",
+    sub_dir: "default-permissions",
+    product_specific: true,
 }
