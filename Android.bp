@@ -3,8 +3,8 @@ android_app_import {
     apk: "CamperNavigator.apk",
     privileged: true,
     presigned: true,
-    preprocessed: true,
     product_specific: true,
+    uncompress_dex: true,
     dex_preopt: {
         enabled: false,
     },
