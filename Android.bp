@@ -2,9 +2,8 @@ android_app_import {
     name: "CamperNavigator",
     apk: "CamperNavigator.apk",
     privileged: true,
-    presigned: true,
+    certificate: "platform",
     product_specific: true,
-    uncompress_dex: true,
     dex_preopt: {
         enabled: false,
     },
